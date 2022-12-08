@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&display=swap");
+/* Start Code Login Page */
+:root {
+  --trans: 0.4s;
+}
+body {
+  background-color: #2f3640;
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+.box .info_account p {
+  margin: 10px 0;
+}
+.box div {
+  margin: 20px 0;
+}
+/* Style Message */
+.box .message .show_message {
+  cursor: pointer;
+}
+.box .message form {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.box .message form input,
+.box .message form textarea[name="mess"] {
+  width: 90%;
+  background-color: #333;
+  padding: 15px 10px;
+  border: none;
+  border-bottom: solid 2px #fff;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+}
+.box .message form textarea[name="mess"] {
+  height: 250px;
+}
+.box .message form input[type="submit"] {
+  cursor: pointer;
+  transition: var(--trans);
+}
+.box .message form input[type="submit"]:hover {
+  background-color: green;
+  box-shadow: 1px 1px 6px green;
+}
+
+/* Style LogOut Button */
+.box form .logout {
+  padding: 10px 15px;
+  border-radius: 100px;
+  border: solid #ff000066 3px;
+  width: 80%;
+  outline: none;
+  transition: var(--trans);
+  color: #fff;
+  background-color: #ff000066;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.box form .logout:hover {
+  width: 90%;
+  background-color: red;
+  box-shadow: 1px 1px 6px red;
+}
